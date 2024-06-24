@@ -1,11 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hola desde index.php</h1>
-</body>
-</html>
+    <?php
+        get_header();
+    ?>
+
+
+    <h1>hola desde index.php</h1>
+    <main>
+        <?php
+        while (have_posts()) : the_post(); // start the loop and contact the DB of wp
+
+            the_title(); // set the name of the page/post
+            the_content(); // set the content of the page/post
+
+        endwhile; // end the loop
+        ?>
+    </main>
+
+    <?php
+        get_footer();
+    ?>
