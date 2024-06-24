@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang=<?php language_attributes(); ?>>
-
+<html <?php language_attributes(); ?>>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/images/Logo.svg" type="image/x-icon">
-
+    <link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/img/logo.svg" type="image/x-icon">
     <?php 
-        wp_head(); //charge a lot of wp content example: scripts and css 
-    ?>
+        wp_head(); // charge a lot of wp content example: scripts and css 
+    ?> 
 </head>
-
 <body <?php body_class(); ?>>
     <header class="header">
         <nav class="container navbar"> 
             <div class="logo">
                 <a href="<?php echo site_url("/"); ?>">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/Logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
                 </a>
             </div>
+            <div class="hamburguer-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="72" height="72" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                </svg>
+            </div>
+
             <div class="container-menu">
                 <?php 
                     $args = array (
@@ -33,4 +39,22 @@
             <!-- add the dynamic menu -->
            
         </nav>
+        <?php 
+            if(is_front_page()) {
+                ?>                
+                    <div class="tagline text-center container">
+                        <h1 class="ml2">
+                            <?php 
+                               the_field("hero_heading");
+                            ?>
+                        </h1> 
+                        <p>
+                            <?php 
+                                the_field("hero_texto");
+                            ?>
+                        </p>                       
+                    </div>
+                <?php
+            }
+        ?>
     </header>
