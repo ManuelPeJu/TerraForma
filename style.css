@@ -14,16 +14,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --background: #f9f6f4;
-    --primary: #b58153;
-    --secondary: #dab493;
-    --accent: #d69861;
+    /** Fuentes **/
     --main-font: 'Raleway', sans-serif;
     --heads-font: "Staatliches", sans-serif;
+    /** Colores **/
+    --primary: #ff5b00;
     --dark-grey: #2f2e2e;
     --light-grey: #EBEBEB;
     --white:#FFF;
     --dark: #000;
+
 
 }
 
@@ -112,9 +112,7 @@ hr {
     display: flex;
     justify-content: flex-end;
 }
-
 /* Buttons */
-
 .form-submit .submit,
 .button {
     background-color: var(--primary);
@@ -149,7 +147,7 @@ hr {
 
 /* utilities */
 
-.center-text {
+.text-center {
     text-align: center;
 }
 
@@ -158,7 +156,7 @@ hr {
 }
 
 .white-text {
-    color: var(--textWhite);
+    color: var(--white);
 }
 
 .section {
@@ -170,20 +168,21 @@ hr {
 
 body.home .header {
     padding-top: 2rem;
-    /* min-height: 70rem;
+    height: auto;
+    min-height: 70rem;
     background-size: cover;
-    background-position: center center; */
+    background-position: center center;
 
 }
 @media (min-width: 768px) {
     body.home .header {
-        /* height: 100vh; */
-        /* max-height: 95rem; */
+        height: 100vh;
+        max-height: 95rem;
     }
 }
 
 .header {
-    background-color: var(--primary);
+    background-color: var(--dark-grey);
     padding: 2rem 0;
 }
 
@@ -366,6 +365,8 @@ body.home .header {
         margin: 0;
     }
 }
+
+/* CONTACT FORM 7 */
 
 .wpcf7-form label {
     font-weight: 700;
