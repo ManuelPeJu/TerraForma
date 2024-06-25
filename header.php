@@ -42,7 +42,7 @@
         <?php 
             if(is_front_page()) {
                 ?>                
-                    <div class="tagline text-center container">
+                    <div class="tagline center-text container">
                         <h1 class="ml2">
                             <?php 
                                the_field("hero_heading");
