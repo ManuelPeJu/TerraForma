@@ -1,10 +1,10 @@
 
-<?php //Create the name of the child template
-    /*
-        Template Name: Contenido Centrado (No Sidebars)
-    */
-    get_header();
-?>
+    <?php //Create the name of the child template
+        /*
+            Template Name: Contenido Centrado (No Sidebars)
+        */
+        get_header();
+    ?>
 
     <main class="container section focus-content">
         <?php 
