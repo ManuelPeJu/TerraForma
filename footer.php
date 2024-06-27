@@ -1,5 +1,15 @@
 <footer class="footer container">
         <hr>
+        <div>
+            <div class="social">
+                <ul class="social-list">
+                    <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
 
         <div class="footer-content">
             <?php 
@@ -13,7 +23,6 @@
                 wp_nav_menu($args); // this function render a menu taking a associative array as menu location
 
             ?>
-
             <p class="copyright">Todos los derechos reservados. <?php echo get_bloginfo("name") . " " . date("Y"); ?></p>
         </div>
     </footer>

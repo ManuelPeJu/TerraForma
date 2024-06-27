@@ -24,7 +24,7 @@
         </div>
     </main> 
 
-    <section class="container section_2">
+    <section class="container">
         <h2 class="center-text primary-text">¿Quiénes somos?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corporis quas vero doloremque dignissimos mollitia nobis quis, eum sunt placeat, similique aut. Maxime magnam architecto quia dolore earum tenetur eius soluta reiciendis ipsam eos. Dolor ipsa repellendus quae non, doloremque voluptatibus accusamus ad architecto vitae eius facilis nesciunt fuga ducimus?</p>
         <div class="button-container">
