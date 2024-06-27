@@ -24,6 +24,10 @@
         </div>
     </main> 
 
+    <section>
+        
+    </section>
+
     <?php
         get_footer();
     ?>
