@@ -49,7 +49,7 @@
 
     //dynamic images
     
-    function gymfitness_hero_imagen() {
+    function terraforma_hero_imagen() {
         //All of this is so that the owner, if for whatever reason he wants to change the hero's image, can.
 
         // getting the id from the page
@@ -71,7 +71,7 @@
         //inject css code
         wp_add_inline_style("custom", $imagen_destacada_css);
     }
-    add_action('init', 'gymfitness_hero_imagen');
+    add_action('init', 'terraforma_hero_imagen');
 ?>
 
 
