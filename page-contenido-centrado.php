@@ -6,7 +6,7 @@
         get_header();
     ?>
 
-    <main class="container section focus-content">
+    <main class="container section focus-content center-text">
         <?php 
              get_template_part("template-parts/pagina")
         ?>
