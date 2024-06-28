@@ -37,14 +37,16 @@ if(textWrapper) {
         delay: 1000
         });
 
-        const hamburguer = document.querySelector(".hamburguer-menu svg");
-        hamburguer.addEventListener("click", function() {
-            const mainMenu = document.querySelector(".container-menu"); 
-            mainMenu.classList.toggle("show");
-        })
+       
 
 }
 
+// Hamburguer menu 
+const hamburguer = document.querySelector(".hamburguer-menu svg");
+hamburguer.addEventListener("click", function() {
+    const mainMenu = document.querySelector(".container-menu"); 
+    mainMenu.classList.toggle("show");
+})
 
 // sticky navbar
 
