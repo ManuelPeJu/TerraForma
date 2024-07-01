@@ -52,6 +52,11 @@ h1, h2, h3 {
     margin: 0 0 5rem 0;
     line-height: 1.2;
 }
+@media (max-width: 600px) {
+    h1,h2,h3 {
+        word-wrap: break-word;
+    }
+}
 
 h1 {
     font-size: 6rem;
