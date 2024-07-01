@@ -175,7 +175,7 @@ body.home .header {
 }
 
 @media (min-width: 768px) {
-    body .header {
+    body.home .header {
         height: 100vh;
         max-height: 100rem;
     }
@@ -366,6 +366,7 @@ body.home .header {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .social-list li {
@@ -389,6 +390,10 @@ body.home .header {
         text-align: center;
         margin: 0;
         
+    }
+
+    .social-list {
+        flex-direction: row;
     }
 }
 
