@@ -12,8 +12,9 @@
     <header class="header">
         <nav class="container navbar"> 
             <div class="logo">
-                <a href="<?php echo site_url("/"); ?>">
-                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Logotipo"> <!-- WP function to get the url dynamically -->
+                <a href="<?php echo site_url("/"); ?>" class="no-logo">
+                   <!-- <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/Logo.svg" alt="Logotipo">  WP function to get the url dynamically -->
+                    Logotipo
                 </a>
             </div>
             <div class="hamburguer-menu">

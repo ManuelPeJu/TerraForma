@@ -182,6 +182,13 @@ body.home .header {
     }
 }
 
+.no-logo {
+    color: var(--white);
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 3rem;
+}
+
 .header {
     background-color: var(--dark-grey);
     padding: 2rem 0;
